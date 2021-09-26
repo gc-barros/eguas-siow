@@ -43,9 +43,10 @@ a[rel=external]:hover {
 }
 
 .third-section .description {
+    font-size: 20px;
     text-indent: 40px;
-    margin-top: 40px;
-    text-align: justify;
+    margin-top: 32px;
+    text-align: left;
     line-height: 1.7;
 }
 
@@ -75,6 +76,7 @@ a[rel=external]:hover {
 
 .third-section .buttons-box {
     min-width: 301px;
+    padding-top: 24px;
 }
 
 .third-section .primary-button,
@@ -96,7 +98,7 @@ a[rel=external]:hover {
 /* Call to action */
 
 .endline {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     color: #494949;
     margin: 0;
@@ -133,7 +135,8 @@ a[rel=external]:hover {
     }
 
     .endline {
-        font-size: 16px;
+        font-size: 18px;
+        text-align: center;
     }
 
     .illustration-2 {
@@ -157,10 +160,6 @@ a[rel=external]:hover {
 
     .yt-video {
         margin: 26px;
-    }
-
-    .endline {
-        font-size: 14px;
     }
 
     .illustration-2 {

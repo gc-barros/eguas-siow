@@ -254,7 +254,7 @@ body {
 .continue h3 {
     font-weight: 600;
     color: #494949;
-    font-size: 16px;
+    font-size: 18px;
 }
 .continue .buttons-box {
     padding: 0;
@@ -438,5 +438,10 @@ body {
 
     #pratos-tipicos .cardbox-2 img {
         filter: none;
+    }
+
+    .continue h3 {
+        font-size: 16px;
+        margin-bottom: 32px;
     }
 }
