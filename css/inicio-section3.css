@@ -1,0 +1,171 @@
+/* Terceira seção da página inicial */ 
+
+.third-section {
+    background-image: url(../images/background-blur-2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: center;
+    margin-top: -140px;
+    height: 900px;
+    position: relative;
+    padding: 0 26px;
+}
+
+.third-section .container {
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.third-section .text-block {
+    margin-top: 88px;
+}
+
+a[rel=external] {
+    color: #363636;
+    transition: 1s;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a[rel=external]:hover {
+    color: var(--azul);
+    text-decoration: underline;
+}
+
+.third-section .headline {
+    font-size: 32px;
+    margin-bottom: 24px;
+
+}
+
+.third-section .description {
+    text-indent: 40px;
+    margin-top: 40px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.headline strong {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+/* Vídeo do YouTube */
+
+.yt-video {
+    background-color: var(--azul);
+    padding: 8px;
+    width: 100%;
+    height: 45vw;
+    max-height: 315px;
+    min-width: 295px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 32px 0 48px 0;
+}
+
+.yt-video iframe {
+    width: 100%;
+}
+
+.third-section .buttons-box {
+    min-width: 301px;
+}
+
+.third-section .primary-button,
+.continue .primary-button {
+    background-image: linear-gradient(
+    to right,
+    #495bff 0%,
+    var(--azul) 51%,
+    #495bff 100%
+  );
+}
+
+.third-section .secundary-button,
+.continue .secundary-button {
+    border-color: var(--azul);
+    color: var(--azul);
+}
+
+/* Call to action */
+
+.endline {
+    font-size: 24px;
+    font-weight: 500;
+    color: #494949;
+    margin: 0;
+}
+
+.illustration-2 {
+    position: absolute;
+    right: -340px;
+    bottom: -170px;
+    z-index: 1;
+}
+
+.illustration-2 > img {
+    width: 100%;
+}
+
+/* Responsividade */
+
+@media (max-width: 1080px) and (min-width: 620px) {
+    .third-section {
+        margin-top: -240px;
+    }
+}
+
+@media (max-width: 832px) {
+    .third-section .headline {
+        font-size: 24px;
+        margin-bottom: 24px;
+    
+    }
+
+    .third-section .description {
+        font-size: 14px;
+    }
+
+    .endline {
+        font-size: 16px;
+    }
+
+    .illustration-2 {
+        right: -90px;
+        bottom: -210px;
+        width: 270px;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 620px) {
+    .third-section {
+        margin-top: -100px;
+    }
+
+    .third-section .headline {
+        font-size: 20px;
+        margin-bottom: 20px;
+    
+    }
+
+    .yt-video {
+        margin: 26px;
+    }
+
+    .endline {
+        font-size: 14px;
+    }
+
+    .illustration-2 {
+        right: 28px;
+        bottom: -298px;
+        width: 190px;
+    }
+}

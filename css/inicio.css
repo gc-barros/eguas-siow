@@ -1,0 +1,470 @@
+/* CSS DA PÁGINA 'INÍCIO' */
+
+/* Background blur da section 1 */
+
+.container-principal {
+  background-image: url(../images/background-blur-1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Primeira seção */
+
+.first-section {
+  max-width: 1170px;
+  min-width: 340px;
+  padding: 40px;
+  padding-top: 80px;
+  margin: auto;
+  position: relative;
+}
+
+/* Bloco de texto */
+
+.text-box,
+.buttons-box {
+  max-width: 500px;
+}
+
+.first-section .intro {
+  font-size: 16px;
+  color: #737373;
+  font-weight: 500;
+}
+
+.first-section .headline {
+  font-size: 40px;
+  margin: 28px 0;
+}
+
+.first-section .description {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #494949;
+  line-height: 28px;
+}
+
+/* Botões */
+
+.buttons-box {
+  padding-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-button {
+  color: var(--branco);
+  background-image: linear-gradient(
+    to right,
+    #ff4949 0%,
+    #f11010 51%,
+    #ff4949 100%
+  );
+  margin-right: 20px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(238, 238, 238, 0.295);
+}
+
+.primary-button:hover {
+  transform: scale(1.05);
+  background-position: right center;
+  box-shadow: 2px 2px 8px #24242421;
+}
+
+.secundary-button {
+  color: var(--vermelho);
+  background-color: #ffffff00;
+  border: 4px solid var(--vermelho);
+  transition: 0.5s;
+}
+
+.secundary-button:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px #24242421;
+}
+
+/* Animação do Bumba-boi */
+
+@keyframes rotacionar {
+    0% {
+      transform: rotate(7deg);
+    }
+    
+    50% {
+      transform: rotate(-7deg);
+    }
+
+    100% {
+        transform: rotate(7deg);
+      }
+
+}
+
+.bumba-boi {
+  position: absolute;
+  top: -90px;
+  right: -340px;
+  width: 1000px;
+  animation-name: rotacionar;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.bumba-boi img {
+  width: 100%;
+}
+
+/* Seção 2 */
+
+.blue-section {
+  max-width: 1170px;
+  padding: 40px;
+  padding-top: 80px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+
+.background-blue {
+  opacity: 1;
+  position: absolute;
+  top: -320px;
+  z-index: 1;
+}
+
+.blue-content {
+  position: relative;
+  margin: 50px auto 0 auto;
+  z-index: 2;
+  max-width: 650px;
+  color: #f8f8f8;
+}
+
+.blue-intro {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.extended-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  transition: 1s ease-in;
+}
+
+.blue-content:hover .extended-logo {
+    transform: scale(1.1);
+}
+
+.extended-logo > img {
+  width: 100%;
+}
+
+.eguas-description {
+  font-size: 22px;
+  line-height: 32px;
+  text-indent: 40px;
+  text-align: justify;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.eguas-description strong {
+  font-weight: 600;
+}
+
+.single-button-box {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.blue-content .primary-button {
+  width: 300px;
+  background-image: linear-gradient(
+    to right,
+    #e2e2e2 0%,
+    #ffffff 51%,
+    #e2e2e2 100%
+  );
+  color: #0f0f0f;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.illustration {
+  position: absolute;
+  bottom: 76px;
+  left: -100px;
+  z-index: 2;
+}
+
+.listras {
+  position: absolute;
+  bottom: 122px;
+  z-index: 1;
+}
+
+/* Responsividade */
+
+@media (max-width: 1080px) {
+  .bumba-boi {
+    top: -50px;
+    width: 800px;
+  }
+
+  .background-blue {
+    position: absolute;
+    top: -420px;
+    z-index: 1;
+  }
+
+  .blue-content {
+    margin-top: -32px;
+  }
+
+  .blue-intro {
+    font-size: 24px;
+  }
+
+  .eguas-description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .single-button-box .primary-button {
+    margin-top: 20px;
+  }
+
+  .illustration {
+    bottom: 176px;
+  }
+  
+  .listras {
+    position: absolute;
+    bottom: 222px;
+  }
+}
+
+@media (max-width: 980px) {
+    .illustration > img {
+        width: 140px;
+    }
+
+    .illustration {
+        bottom: 226px;
+        left: 0px;
+      }
+
+}
+
+@media (max-width: 832px) {
+  .container-principal {
+    background-position-x: -350px;
+  }
+
+  .first-section {
+    padding: 32px;
+  }
+
+  .first-section .intro {
+    font-size: 14px;
+  }
+
+  .first-section .headline {
+    font-size: 32px;
+  }
+
+  .first-section .description {
+    font-size: 16px;
+  }
+
+  .text-box {
+    max-width: 400px;
+  }
+
+  .buttons-box {
+    padding-top: 32px;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .primary-button {
+    margin-right: 24px;
+  }
+
+  .secundary-button {
+    border: 3px solid var(--vermelho);
+  }
+
+  .listras {
+    position: absolute;
+    bottom: 222px;
+  }
+}
+
+@media (max-width: 790px) {
+  .bumba-boi {
+    top: -110px;
+    right: -320px;
+  }
+}
+
+@media (max-width: 750px) {
+  .bumba-boi {
+    top: -10px;
+    right: -320px;
+    width: 650px;
+  }
+
+  .blue-content {
+    margin-top: -40px;
+  }
+
+  .blue-intro {
+    font-size: 16px;
+  }
+
+  .eguas-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .single-button-box .primary-button {
+    margin-top: 20px;
+  }
+
+  .illustration {
+      bottom: 218px;
+      left: 30%;
+  }
+
+  .illustration > img {
+      width: 160px;
+  }
+  
+  .listras {
+    position: absolute;
+    bottom: 222px;
+  }
+}
+
+@media (max-width: 625px) {
+  .first-section {
+    padding: 40px 20px 40px 30px;
+    max-width: 355px;
+  }
+
+  .first-section .intro {
+    font-size: 11px;
+  }
+
+  .headline {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .first-section .description {
+    max-width: 310px;
+    font-size: 14px;
+  }
+
+  .buttons-box {
+    padding-top: 24px;
+  }
+
+  button {
+    width: 140px;
+    height: 35px;
+    font-size: 11px;
+    border-radius: 6px;
+  }
+
+  .primary-button {
+    margin-right: 16px;
+  }
+
+  .bumba-boi {
+    right: -170px;
+    top: 320px;
+    width: 420px;
+  }
+
+  .background-blue {
+    position: absolute;
+    top: -280px;
+    z-index: 1;
+  }
+
+  .blue-content {
+    margin-top: 80px;
+  }
+
+  .illustration {
+    bottom: 78px;
+  }
+
+  .listras {
+    position: absolute;
+    bottom: 82px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bumba-boi {
+    right: -100px;
+  }
+
+  .blue-content {
+    margin-top: 80px;
+  }
+
+  .blue-intro {
+    font-size: 16px;
+  }
+
+  .eguas-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .single-button-box .primary-button {
+    margin-top: 20px;
+  }
+
+  .illustration {
+    bottom: 90px;
+}
+
+  .illustration > img {
+      width: 130px;
+  }
+}

@@ -1,0 +1,226 @@
+/* CSS das duas páginas de contato */
+
+.contact-container {
+    padding: 24px;
+}
+
+.contact-container .contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 860px;
+    margin: auto;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.contact-container .text-box  {
+    max-width: 586px;
+}
+
+.contact-container .text-box .intro {
+    font-size: 16px;
+    font-weight: 500;
+    color: #737373;
+}
+
+.contact-container .text-box .headline {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0c0c0c;
+}
+
+.contact-container .text-box .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+    line-height: 1.4;
+}
+
+/* Animação de flutuar */
+
+@keyframes flutuar {
+    0% {
+      bottom: 0px;
+    }
+    
+    50% {
+      bottom: -24px;
+    }
+
+    100% { 
+        bottom: 0px;
+    }
+
+}
+
+.contact-box .illustration-form-1 {
+    margin-top: -32px;
+    margin-left: 32px;
+    position: relative;
+    animation-name: flutuar;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.contact-box .illustration-form-1 img {
+    width: 100%;
+}
+
+/* Formulário */
+
+form {
+    color: #0c0c0c;
+    margin: 32px auto;
+    max-width: 424px;
+    box-shadow: rgba(0, 0, 0, 0.274) 0px 1px 4px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-title {
+    text-align: center;
+    font-weight: 500;
+    color: #494949;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.form-title i {
+    position: relative;
+    font-size: 20px;
+    bottom: -4px;
+    color: #a45cb6;
+}
+
+form input, textarea {
+    color: #696969;
+    display: block;
+    margin: 16px 0 32px 0;
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: #f6e3f84d;
+    border-radius: 8px;
+    box-shadow: #645b6667 0px 0px 2px inset;
+    padding: 14px;
+    font-size: 14px;
+}
+
+form input:focus, textarea:focus {
+    background-color: #e5c6e957;
+}
+
+form input::placeholder, textarea::placeholder {
+    color: #5f5f5f77;
+}
+
+form input {
+    height: 50px;
+}
+
+
+form label {
+    color: #494949;
+    margin-left: 2px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form label span {
+    color: #a45cb6;
+}
+
+.form-button-box {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--branco);
+    background-image: linear-gradient(
+        to right,
+        #A884D8 0%,
+        #9a47af 51%,
+        #A884D8 100%
+    );
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(238, 238, 238, 0.295);
+  font-size: 14px;
+}
+
+.form-button:hover {
+    transform: scale(1.05);
+    background-position: right center;
+    box-shadow: 2px 2px 8px #58585821;
+}
+
+.illustration-end img {
+    display: block;
+    position: relative;
+    margin: auto;
+    bottom: -20px;
+    width: 300px;
+}
+
+
+@media (max-width: 940px) {
+
+    .contact-container .contact-box {
+        margin-top: 32px;
+        padding: 10px;
+    }
+
+    .contact-container .text-box  .intro {
+        font-size: 14px;
+    }
+
+    .contact-container .text-box  .headline {
+        font-size: 24px;
+    }
+
+    .contact-container .text-box  .description {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    .contact-box .illustration-form-1 {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 16px;
+    }
+
+    .contact-box .illustration-form-1 img {
+        width: 60%;
+    }
+
+    form {
+        padding: 24px;
+        min-width: 310px;
+    }
+
+    form label, form input, textarea {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    form input {
+        height: 40px;
+    }
+
+    form .form-button {
+        font-size: 12px;
+    }
+
+}

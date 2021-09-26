@@ -1,0 +1,442 @@
+/* CSS das duas páginas de cultura */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ffffff 80%, #d7cbfc );
+}
+
+/* Background principal das páginas */
+
+.container-cultural {
+    background-image: url(../images/Blobs.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.content-container {
+    max-width: 850px;
+    margin: auto;
+    padding: 32px;
+}
+
+/* Banner dinâmico */
+
+.big-banner {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 490px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+@keyframes banner-motion {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+        left: -1532px;
+      }
+
+}
+
+.background-banner {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    animation-name: banner-motion;
+    animation-duration: 70s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: contrast(1.1);
+}
+
+.illustration-3, .text-box-cultural {
+    position: relative;
+}
+
+.illustration-3 {
+    position: absolute;
+    bottom: -20px;
+    right: -80px;
+    z-index: 1;
+}
+
+.illustration-3 img {
+    max-width: 680px;
+}
+
+.illustration-3.cultura-2 {
+    right: 180px;
+    bottom: -36px;
+    width: 300px;
+}
+
+.text-box-cultural {
+    background-color: #0000008a;
+    margin: 24px;
+    border-radius: 8px;
+    padding: 32px;
+    max-width: 540px;
+    max-height: 290px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.493) 0px 18px 36px -18px;
+    z-index: 2;
+}
+
+.text-box-cultural .headline {
+    color: #fff;
+}
+
+.text-box-cultural .headline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 8px;
+    height: 4px;
+    width: 200px;
+    background-color: #746BD8;
+}
+
+.text-box-cultural .intro {
+    font-size: 16px;
+    font-weight: 300;
+    color: #dbdbdbc9;
+    line-height: 1.4;
+}
+
+.text-box-cultural .description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #ebebeb;
+}
+
+.belezas-naturais {
+    margin: auto;
+}
+
+.culture-box {
+    margin: 56px auto 0 auto;
+    padding: 16px;
+}
+
+.culture-box .title {
+    font-size: 32px;
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.culture-box .title::after {
+    content: '';
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 8px;
+    height: 6px;
+    width: 240px;
+    background-image: linear-gradient(
+        to left,
+        #ff7474 0%,
+        var(--vermelho) 100%
+      );
+    transition: 2s ease-out;
+}
+
+.culture-box:hover .title::after {
+    transform: scaleX(1.5);
+}
+
+.culture-box .description {
+    margin: 0;
+    font-size: 20px;
+    color: #494949;
+    line-height: 1.5;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+/* Cards das belezas naturais */
+
+.cardbox-1 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardbox-1 img {
+    width: 250px;
+    transition: 0.7s ease-out;
+    opacity: 0.5;
+}
+
+.cardbox-1 img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Google Maps */
+
+.map {
+    padding: 16px;
+    width: 100%;
+}
+
+.map h3, .spotify-box h3 {
+    margin-top: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
+}
+
+/* Spotify */
+
+.spotify-box {
+    margin-top: -40px;
+    padding: 8px;
+}
+
+.map iframe, .spotify-box iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* Cards dos pratos típicos e lendas */
+
+.cardbox-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#pratos-tipicos .cardbox-2 img {
+    margin: 8px 0;
+    transition: 0.5s ease-out;
+    filter: grayscale(1);
+}
+
+#pratos-tipicos .cardbox-2 img:hover {
+    transform: rotate(-3deg);
+    filter: grayscale(0);
+}
+
+.continue {
+    text-align: center;
+}
+
+
+.illustration-dog {
+    margin-top: 16px;
+    height: 190px;
+    animation-name: rotacionar;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+.continue h3 {
+    font-weight: 600;
+    color: #494949;
+    font-size: 16px;
+}
+.continue .buttons-box {
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 24px;
+    min-width: 302px;
+}
+
+/* Vídeo do YT */
+
+#festas-populares .yt-video {
+    max-width: 760px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+#lendas-misterios .cardbox-2 {
+    margin: auto;
+    justify-content: center;
+    max-width: 560px;
+}
+
+#lendas-misterios .cardbox-2 figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#lendas-misterios .cardbox-2 img {
+    padding: 8px 10px;
+    transition: 1s ease-out;
+}
+
+#lendas-misterios .cardbox-2 img:hover {
+    transform: rotate(2deg)
+}
+
+/* shine hover */
+
+#lendas-misterios .cardbox-2 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+#lendas-misterios .cardbox-2 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@media (max-width: 940px) {
+
+    .text-box-cultural {
+        top: -80px;
+        padding: 24px;
+    }
+
+    .text-box-cultural .intro {
+        font-size: 14px;
+    }
+
+    .text-box-cultural .headline {
+        font-size: 24px;
+    }
+
+    .text-box-cultural .description {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+
+    .illustration-3 {
+        bottom: -10px;
+    }
+
+    .illustration-3 img {
+        width: 500px;
+    }
+
+    .culture-box .title {
+        font-size: 24px;
+    }
+
+    .culture-box .description {
+        font-size: 16px;
+    }
+
+    .cardbox-1 img {
+        width: 200px;
+        margin-top: 8px;
+    }
+
+    .cardbox-2 img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 570px) {
+    .big-banner {
+        justify-content: center;
+    }
+
+    .text-box-cultural {
+        top: 10px;
+        max-width: 312px;
+    }
+
+    .text-box-cultural {
+        padding: 24px;
+    }
+
+    .text-box-cultural .intro {
+        font-size: 12px;
+    }
+
+    .text-box-cultural .headline {
+        font-size: 18px;
+    }
+
+    .text-box-cultural .description {
+        font-size: 14px;
+        margin-top: 32px;
+    }
+
+    .illustration-3 {
+        position: relative;
+        bottom: 5px;
+        left: 0px;
+    }
+
+    .illustration-3 img {
+        width: 400px;
+    }
+
+    .illustration-3.cultura-2 {
+        bottom: 16px;
+        width: 200px;
+    }
+
+    .culture-box {
+        margin-top: 48px;
+    }
+
+    .culture-box .title {
+        font-size: 18px;
+    }
+
+    .culture-box .description {
+        font-size: 14px;
+    }
+
+    .cardbox-1 img {
+        width: 180px;
+        margin-top: 8px;
+        opacity: 1;
+    }
+
+    .cardbox-2 img {
+        width: 280px;
+        filter: none;
+    }
+
+    #pratos-tipicos .cardbox-2 img {
+        filter: none;
+    }
+}

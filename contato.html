@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/color-pallete.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/inicio-section3.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cultura.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <title>ÉGUAS, SIOW! │ Belezas & Culinária</title>
+</head>
+
+<body>
+    <div class="container-cultural">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="container-cabecalho">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo do Projeto Éguas Siow!"></a>
+                </div>
+                <div class="menu-mobile" onclick="clickMenuMobile()">
+                    <i class="ri-menu-line"></i>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-option"><a href="index.html">INÍCIO</a></li>
+                        <li class="menu-option">
+                            <a id="eferv-cult">EFERVESCÊNCIA CULTURAL</a>
+                            <i class="ri-arrow-down-s-fill ri-lg"></i>
+                            <ul class="submenu">
+                                <li class="submenu-option"><a href="cultura-1.html">BELEZAS NATURAIS</a></li>
+                                <li class="submenu-option"><a href="cultura-1.html">PRATOS TÍPICOS</a></li>
+                                <li class="submenu-option"><a href="cultura-2.html">FESTAS POPULARES</a></li>
+                                <li class="submenu-option"><a href="cultura-2.html">LENDAS E MISTÉRIOS</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-option"><a href="contato.html" class="active">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="contact-container">
+                <!-- Introdução ENTRE EM CONTATO -->
+                <div class="contact-box">
+                    <div class="text-box">
+                        <h3 class="intro">Rapá, aqui a sua opinião vale ouro!</h3>
+                        <h1 class="headline">CRÍTICAS, ELOGIOS OU SUGESTÕES?</h1>
+                        <h2 class="description">Como foi a sua experiência no nosso site? Receber o seu feedback é essencial para o nosso crescimento e desenvolvimento profissional. Sinta-se à vontade para fazer um comentário:</h2>
+                    </div>
+    
+                    <div class="illustration-form-1">
+                        <img src="images/Saly-26.svg" alt="Prancheta de formulário">
+                    </div>
+                </div>
+                <!-- Formulário -->
+                <div class="form-box">
+
+                    <form action="contato-2.html">
+                        
+                        <h3 class="form-title">ENTRE EM CONTATO <i class="ri-mail-line"></i></h3>
+                        <label for="name">
+                            Nome <span>(obrigatório)</span>
+                            <input name="name" id="name" type="text" required placeholder="Como você gostaria de ser chamado?">
+                        </label>
+                        <label for="email">
+                            E-mail <span>(obrigatório)</span>
+                            <input name="email" id="email" type="email" required placeholder="Insira o seu endereço de e-mail">
+                        </label>
+                        <label for="mensagem">
+                            Mensagem
+                            <textarea name="message" id="mensagem" cols="30" rows="8" placeholder="Escreva o seu comentário aqui :)"></textarea>
+                        </label> 
+                        
+                        <div class="form-button-box">
+                            <button class="form-button" type="submit">ENVIAR</button>
+               
+                        </div>
+                    </form>
+                </div>
+                <div class="illustration-end">
+                    <img src="images/Saly-19.svg" alt="">
+                </div>
+            </section>
+
+        </main>
+        <!-- Rodapé -->
+        <footer>
+            <div class="container">
+                <p>Site desenvolvido com propósito exclusivamente educacional.</p>
+                <h2>&copy; Copyright 2021 - Powered by <strong>Gabriel C. Barros</strong></h2>
+                <h2>
+                    <!-- Links para contato -->
+                    <a href="https://github.com/gc-barros" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/gabriel-b-526ab7127/" target="_blank"><i
+                            class="ri-linkedin-box-fill"></i></a>
+                    <a href="mailto:gc.barros81@gmail.com?subject=Oi, Gabriel! Gostei do seu site 'Éguas, Siow'...&body=Parabéns pelo seu site, ficou incrível!"
+                        target="_blank"><i class="ri-mail-line"></i></a>
+                </h2>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

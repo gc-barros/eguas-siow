@@ -1,0 +1,60 @@
+/* CSS do rodapé do site */
+
+footer {
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 8px;
+    margin-bottom: -8px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1080px;
+    min-width: 360px;
+    margin-top: 60px;
+}
+
+footer .container h2, 
+footer .container p {
+    margin: 4px;
+    color: #ffffff4f;
+    font-weight: 300;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+footer strong {
+    font-weight: 600;
+}
+
+footer .container p {
+    margin-top: 16px;
+}
+
+footer .container h2 > a {
+    text-decoration: none;
+    color: #ffffff4f;
+    font-size: 24px;
+    transition: 1s;
+}
+
+footer .container h2 > a:hover {
+    text-decoration: none;
+    color: #ffffffbe;
+    font-size: 24px;
+}
+
+@media (max-width: 500px) {
+    footer .container h2, 
+    footer .container p {
+        font-size: 10px;
+    }
+}
