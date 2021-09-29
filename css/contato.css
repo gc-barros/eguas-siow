@@ -173,6 +173,32 @@ form label span {
     width: 300px;
 }
 
+.invalid {
+    background-color: #ff2f0013;
+    color: #D86147;
+    font-style: italic;
+}
+
+/* This is the style of our error messages */
+.error {
+    position: relative;
+    top: -24px;
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    color: #D86147;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.error > i {
+    vertical-align: bottom;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
 @media (max-width: 940px) {
     .contact-container .contact-box {
         margin-top: 32px;
@@ -221,5 +247,9 @@ form label span {
 
     form .form-button {
         font-size: 12px;
+    }
+
+    .error {
+        top: -10px;
     }
 }
