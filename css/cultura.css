@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #ffffff 80%, #d7cbfc );
+    background-image: linear-gradient(to bottom, #ffffff 80%, #d7cbfc);
 }
 
 /* Background principal das páginas */
@@ -40,13 +40,12 @@ body {
 
 @keyframes banner-motion {
     0% {
-      left: 0px;
+        left: 0px;
     }
 
     100% {
         left: -1532px;
-      }
-
+    }
 }
 
 .background-banner {
@@ -61,7 +60,8 @@ body {
     filter: contrast(1.1);
 }
 
-.illustration-3, .text-box-cultural {
+.illustration-3,
+.text-box-cultural {
     position: relative;
 }
 
@@ -89,8 +89,10 @@ body {
     padding: 32px;
     max-width: 540px;
     max-height: 290px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    text-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.493) 0px 18px 36px -18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.493) 0px 18px 36px -18px;
     z-index: 2;
 }
 
@@ -99,13 +101,13 @@ body {
 }
 
 .text-box-cultural .headline::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     margin-top: 8px;
     height: 4px;
     width: 200px;
-    background-color: #746BD8;
+    background-color: #746bd8;
 }
 
 .text-box-cultural .intro {
@@ -140,7 +142,7 @@ body {
 }
 
 .culture-box .title::after {
-    content: '';
+    content: "";
     text-align: center;
     display: block;
     margin: auto;
@@ -151,7 +153,7 @@ body {
         to left,
         #ff7474 0%,
         var(--vermelho) 100%
-      );
+    );
     transition: 2s ease-out;
 }
 
@@ -195,7 +197,8 @@ body {
     width: 100%;
 }
 
-.map h3, .spotify-box h3 {
+.map h3,
+.spotify-box h3 {
     margin-top: 56px;
     font-size: 18px;
     font-weight: 500;
@@ -209,7 +212,8 @@ body {
     padding: 8px;
 }
 
-.map iframe, .spotify-box iframe {
+.map iframe,
+.spotify-box iframe {
     width: 100%;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -239,7 +243,6 @@ body {
 .continue {
     text-align: center;
 }
-
 
 .illustration-dog {
     margin-top: 16px;
@@ -289,44 +292,51 @@ body {
 }
 
 #lendas-misterios .cardbox-2 img:hover {
-    transform: rotate(2deg)
+    transform: rotate(2deg);
 }
 
 /* shine hover */
 
 #lendas-misterios .cardbox-2 figure::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
 }
 
 #lendas-misterios .cardbox-2 figure:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
+    -webkit-animation: shine 0.75s;
+    animation: shine 0.75s;
 }
 
 @-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
+    100% {
+        left: 125%;
+    }
 }
 @keyframes shine {
-	100% {
-		left: 125%;
-	}
+    100% {
+        left: 125%;
+    }
 }
 
 @media (max-width: 940px) {
-
     .text-box-cultural {
         top: -80px;
         padding: 24px;

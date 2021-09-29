@@ -21,7 +21,7 @@ footer .container {
     margin-top: 60px;
 }
 
-footer .container h2, 
+footer .container h2,
 footer .container p {
     margin: 4px;
     color: #ffffff4f;
@@ -53,7 +53,7 @@ footer .container h2 > a:hover {
 }
 
 @media (max-width: 500px) {
-    footer .container h2, 
+    footer .container h2,
     footer .container p {
         font-size: 10px;
     }

@@ -147,8 +147,13 @@ button {
 .background-blue {
   opacity: 1;
   position: absolute;
-  top: -320px;
+  top: -325px;
   z-index: 1;
+  width: 100vw;
+  max-width: 1920px;
+  height: calc(100% + 150px);
+  background: url(../images/background-azul.svg) center no-repeat;
+  background-size: cover;
 }
 
 .blue-content {
@@ -226,6 +231,12 @@ button {
   position: absolute;
   bottom: 122px;
   z-index: 1;
+  height: 64px;
+  width: 100vw;
+  background-image: url(../images/listras.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Responsividade */
@@ -420,7 +431,7 @@ button {
 
   .background-blue {
     position: absolute;
-    top: -280px;
+    top: -285px;
     z-index: 1;
   }
 

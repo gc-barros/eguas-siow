@@ -1,4 +1,4 @@
-/* Terceira seção da página inicial */ 
+/* Terceira seção da página inicial */
 
 .third-section {
     background-image: url(../images/background-blur-2.jpg);
@@ -24,14 +24,14 @@
     margin-top: 88px;
 }
 
-a[rel=external] {
+a[rel="external"] {
     color: #363636;
     transition: 1s;
     text-decoration: none;
     font-weight: 500;
 }
 
-a[rel=external]:hover {
+a[rel="external"]:hover {
     color: var(--azul);
     text-decoration: underline;
 }
@@ -39,7 +39,6 @@ a[rel=external]:hover {
 .third-section .headline {
     font-size: 32px;
     margin-bottom: 24px;
-
 }
 
 .third-section .description {
@@ -82,11 +81,11 @@ a[rel=external]:hover {
 .third-section .primary-button,
 .continue .primary-button {
     background-image: linear-gradient(
-    to right,
-    #495bff 0%,
-    var(--azul) 51%,
-    #495bff 100%
-  );
+        to right,
+        #495bff 0%,
+        var(--azul) 51%,
+        #495bff 100%
+    );
 }
 
 .third-section .secundary-button,
@@ -127,7 +126,6 @@ a[rel=external]:hover {
     .third-section .headline {
         font-size: 24px;
         margin-bottom: 24px;
-    
     }
 
     .third-section .description {
@@ -155,7 +153,6 @@ a[rel=external]:hover {
     .third-section .headline {
         font-size: 20px;
         margin-bottom: 20px;
-    
     }
 
     .yt-video {
