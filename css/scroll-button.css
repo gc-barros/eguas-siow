@@ -37,7 +37,6 @@
 
 @media screen and (max-width: 625px) {
     #scroll-button {
-        display: block;
         font-size: 11px;
         width: 150px;
         height: 42px;

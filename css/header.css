@@ -48,11 +48,13 @@ nav {
     text-align: center;
     margin-left: 60px;
     cursor: pointer;
+    padding: 0 6px;
     padding-top: 2px;
     height: 52px;
     width: 52px;
-    border-radius: 100%;
+    border-radius: 100px;
     transition: 0.5s ease-in;
+    color: #0c004b;
 }
 
 .menu-mobile:hover {
@@ -105,7 +107,7 @@ nav {
 }
 
 .submenu-option:hover {
-    background-color: #ffdada6c;
+    background-color: #ffdada98;
 }
 
 .menu .menu-option {

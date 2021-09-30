@@ -28,3 +28,11 @@ efervCult.addEventListener('click', function () {
         document.querySelector('#eferv-cult').classList.add('active');
     }
 });
+
+document.addEventListener("click", (evt) => {
+    let targetElement = evt.target;
+
+    if (targetElement != efervCult && targetElement != subMenu) {
+        closeMenu(subMenu);
+    }
+});
