@@ -29,6 +29,7 @@ efervCult.addEventListener('click', function () {
     }
 });
 
+// Fecha o submenu ao clicar fora
 document.addEventListener("click", (evt) => {
     let targetElement = evt.target;
 

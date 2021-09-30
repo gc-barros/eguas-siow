@@ -15,11 +15,11 @@ function scrollFunction() {
         clearTimeout(scrollTimer);
     }
 
-    // Esconde o botão após 3000ms, se o scroll parar
-    scrollTimer = window.setTimeout("hideButton()", 3000);
+    // Esconde o botão após 2500ms, se o scroll parar
+    scrollTimer = window.setTimeout("hideButton()", 2000);
 
-    // Quando o usuário scrollar a página 150px para baixo, exibe o botão
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    // Quando o usuário scrollar a página 1200px para baixo, exibe o botão
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
         mybutton.style.display = "block";
        
     } else {
