@@ -84,7 +84,7 @@ nav {
     position: absolute;
     top: 50px;
     left: 8px;
-    background-color: #f6f9ffef;
+    background-color: #f6f9ff;
     box-shadow: rgba(0, 0, 0, 0.068) 1px 1px 3px 1px;
     animation: fadeVisibility 1s;
     border-radius: 0 0 8px 8px;
