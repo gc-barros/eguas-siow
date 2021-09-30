@@ -27,6 +27,11 @@ function scrollFunction() {
     }
 }
 
+// Evita que o botão suma enquanto o mouse estiver em cima dele
+mybutton.addEventListener('mouseover', () => {
+    clearTimeout(scrollTimer);
+});
+
 // Esconder o botão
 function hideButton() {
     mybutton.style.display = "none";
