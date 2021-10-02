@@ -91,7 +91,7 @@ form {
     position: relative;
     font-size: 20px;
     bottom: -4px;
-    color: #a45cb6;
+    color: #912baa;
 }
 
 form input,
@@ -132,7 +132,7 @@ form label {
 }
 
 form label span {
-    color: #a45cb6;
+    color: #912baa;
 }
 
 .form-button-box {
