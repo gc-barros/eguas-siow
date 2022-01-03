@@ -1,5 +1,5 @@
 # 😯Éguas, Siow! 😳
-#### ✨ Site desenvolvido durante os desafios do 1º e 2º Workshops Trilhas, com a finalidade de promover a cultura do estado Maranhão.
+#### ✨ Site desenvolvido durante os desafios do 1º e 2º Workshops Trilhas, com a finalidade de promover a cultura do estado do Maranhão.
 #### 🔗 Confira: https://eguassiow.netlify.app/
 <br>
 
